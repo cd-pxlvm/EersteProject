@@ -151,8 +151,9 @@ Maar nu staat die aanpassing wel online, maar die zit niet in onze lokale repo.
 Laat je echter niet vangen: als je nu lokaal git status doet, ga je nog krijgen dat alles ok is. Want dit git status gaat kijken of jij lokaal nog iets hebt toegevoegd, dat nog niet gecommit is. Nu gebruik je  
  ```C:\Users\UsersName\Documents\EersteProject [master=]>git pull origin master```  
 en nu krijg je weer een hele lijst van acties. Als je gaat ![kijken](images/afterPull.png) dan zegt de tekst dat 1 bestand gewijzigd is.  
->**Dus**: voordat je lokaal begint te werken altijd een pull doen ook al staat [master =]. 
+>**Dus**: voordat je lokaal begint te werken altijd een pull doen ook al staat [master =].  
 Zo vermijd je al een eerste reeks problemen, wanneer je jouw aanpassingen wil pushen naar remote.  
+
 ## Merge conflict oplossen.
 ### Te gebruiken commando's:
 alle reeds gebruikte commando's
