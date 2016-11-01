@@ -52,7 +52,8 @@ C:\Users\UsersName\Documents\EersteProject [master]> git commmit --amend --reset
 Die laatste regel zorgt ervoor, dat indien er al iemand anders als user ingesteld staat, deze vervangen wordt door deze.  
 Indien je iemand enkel van dit project gebruiker wil maken, laat je die global in bovenstaande commando's weg.  
 
-Zo, je lokaal project om met versiebeheer in te werken staat klaar. Maar dit is nog een leeg project.  
+Zo, je lokaal project om met versiebeheer in te werken staat klaar. Maar dit is nog een leeg project. 
+![alle bovenstaande in GitShell](images/project.PNG) 
 
 ## Git add, commit lokaal
 
@@ -73,9 +74,11 @@ Nu: een bestand in de map zetten: ‘readme.md’. Dit kan je in kladblok maken 
 ```
 C:\Users\UsersName\Documents\EersteProject [master]>notepad readme.md
 ```
-Nu opent kladblok en krijg je een pop-up: dit bestand bestaat niet, moet ik dit aanmaken? Je klikt ja.  
-![schermafbeelding](images/screen1.PNG)
-Je zet  *Hier komt het doel van ons project* in het bestand (met de asterisken ervoor en erachter) en slaat dit op en sluit het bestand.  Opmerking: als je die pop-up niet gekregen hebt: doe dan alsnog ‘opslaan als’ en sla het op als readme.md , alle bestanden(geen tekstbestand!!!)  
+Nu opent kladblok en krijg je een pop-up: dit bestand bestaat niet, moet ik dit aanmaken? Je klikt ja. 
+ 
+![schermafbeelding](images/screen1.PNG)  
+
+Je zet  Hier komt het doel van ons project in het bestand (met een asterisk ervoor en erachter) en slaat dit op en sluit het bestand.  Opmerking: als je die pop-up niet gekregen hebt: doe dan alsnog ‘opslaan als’ en sla het op als readme.md , alle bestanden(geen tekstbestand!!!)  
 Je typt nu ‘git status’: Je krijgt nu de melding dat er nog ‘Untracked files’ zijn en dat je die best toevoegt aan datgene je wil committen.  
 ```
 C:\Users\UsersName\Documents\EersteProject [master]> git status
@@ -152,8 +155,8 @@ Laat je echter niet vangen: als je nu lokaal git status doet, ga je nog krijgen 
  ```C:\Users\UsersName\Documents\EersteProject [master=]>git pull origin master```  
 en nu krijg je weer een hele lijst van acties. Als je gaat ![kijken](images/afterPull.PNG) dan zegt de tekst dat 1 bestand gewijzigd is.  
 >**Dus**: voordat je lokaal begint te werken altijd een pull doen ook al staat [master =].  
-Zo vermijd je al een eerste reeks problemen, wanneer je jouw aanpassingen wil pushen naar remote.  
-
+Zo vermijd je al een eerste reeks problemen, wanneer je jouw aanpassingen wil pushen naar remote. 
+ 
 ## Merge conflict oplossen.
 ### Te gebruiken commando's:
 alle reeds gebruikte commando's
