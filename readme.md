@@ -53,6 +53,7 @@ Die laatste regel zorgt ervoor, dat indien er al iemand anders als user ingestel
 Indien je iemand enkel van dit project gebruiker wil maken, laat je die global in bovenstaande commando's weg.  
 
 Zo, je lokaal project om met versiebeheer in te werken staat klaar. Maar dit is nog een leeg project. 
+
 ![alle bovenstaande in GitShell](images/project.PNG) 
 
 ## Git add, commit lokaal
@@ -118,8 +119,13 @@ git status
 ```
 ### Gebruik:
 Het project bestaat nog steeds enkel lokaal. Als je met meerdere aan het project wil werken, zien de anderen nog niet dat er iets gewijzigd is. Hiervoor moet je nu je code pushen naar GitHub.    
-Maar op dit moment bestaat ons project nog maar enkel lokaal. We maken nu op GitHub ook een repo aan met dezelfde naam. Hiervoor moet je je inloggen op GitHub.com en je kiest dat je een nieuwe repository wil aanmaken. Dit kan met ![het plusje naast je account afbeelding](images/newRepo1.PNG) Of met de knop ‘”New repository” in ![het kader met het overzicht van jouw projecten](images/newRepo2.PNG).   
-Je krijgt nu een ![invulveld](images/newRepo3.PNG). We geven het dezelfde naam als ons lokaal project ‘EersteProject’. Je geeft een korte uitleg over jouw project bij de beschrijving. Vermits wij in ons project een Readme.md hebben gemaakt, gaan we dit hier niet meer aanvinken.   
+Maar op dit moment bestaat ons project nog maar enkel lokaal. We maken nu op GitHub ook een repo aan met dezelfde naam. Hiervoor moet je je inloggen op GitHub.com en je kiest dat je een nieuwe repository wil aanmaken. Dit kan met het plusje naast je account afbeelding of met de knop ‘”New repository” in het kader met het overzicht van jouw projecten.  
+	
+![plusje](images/newRepo1.PNG)   ![kader](images/newRepo2.PNG)  
+
+Je krijgt nu een invulveld.  
+![invulveld](images/newRepo3.PNG)
+We geven het dezelfde naam als ons lokaal project ‘EersteProject’. Je geeft een korte uitleg over jouw project bij de beschrijving. Vermits wij in ons project een Readme.md hebben gemaakt, gaan we dit hier niet meer aanvinken.   
 In je eerste project, gaan we ook geen .gitignore laten genereren. Weet dat je in een project met code altijd opneemt. In punt 4 gaan we dieper in op dit soort bestand en waarom het goed is om altijd een .gitignore bestand in je project te zetten. Je kan dit dan later nog toevoegen.  
 Nu klik je op de knop ‘Create repository’ en je remote repo is aangemaakt.  
 Nu moet je nog een verbinding maken met je lokaal project. In GitHub opent zich nu een [venster](images/newRepo4.PNG) dat je helpt met hoe je dat nu best doet. Vermits je lokaal je project al volledig klaar hebt staan, ga je dit nu nog moeten pushen naar GitHub. We kiezen hiervoor de optie om dit vanaf de prompt te doen.  
