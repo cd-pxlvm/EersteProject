@@ -21,7 +21,7 @@ git config --global user.email jouwEmailadres
 
 Om te beginnen heb je een map nodig waarin je je project gaat maken. Je navigeert naar de plaats waar je die map wil plaatsen:  ‘cd [pad]’. Want standaard kom je immers in de automatisch gegenereerde map GitHub terecht.  
 Wij noemen deze map: ‘EersteProject’ en zetten die in de documenten map op onze computer.  
-``´
+```
 C:\Users\UsersName\Documents\Github> cd ..
 C:\Users\UsersName\Documents> mkdir .\EersteProject\
 ```
