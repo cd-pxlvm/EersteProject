@@ -97,7 +97,7 @@ git commit : op deze manier opent zich kladblok, opdat je een commitboodschap ka
 Je kan ook ‘git commit -m “boodschap” ‘ ingeven. Nu krijg je geen pop-up meer, want je hebt al de reden van commit meegegeven.  
 Nu zie je aan de prompt terug gewoon [master] omdat alles uit je werk area ook in je repo zit.  
 Omdat alles lokaal staat, zie je misschien niet of er veranderingen zijn. Hiervoor kan je altijd git status gebruiken. Die geeft aan wat waar zit.  
-![voorbeeld Git Shell met bovenstaande acties](images/screen2.png)   
+![voorbeeld Git Shell met bovenstaande acties](images/screen2.PNG)   
 
 ### *Oefeningen*
 Voeg nog 2 bestanden toe, breng 3 wijzigingen aan in die bestanden en doe na iedere verandering een add en een commit.  
@@ -115,20 +115,20 @@ git status
 ```
 ### Gebruik:
 Het project bestaat nog steeds enkel lokaal. Als je met meerdere aan het project wil werken, zien de anderen nog niet dat er iets gewijzigd is. Hiervoor moet je nu je code pushen naar GitHub.    
-Maar op dit moment bestaat ons project nog maar enkel lokaal. We maken nu op GitHub ook een repo aan met dezelfde naam. Hiervoor moet je je inloggen op GitHub.com en je kiest dat je een nieuwe repository wil aanmaken. Dit kan met ![het plusje naast je account afbeelding](images/newRepo1.png) Of met de knop ‘”New repository” in ![het kader met het overzicht van jouw projecten](images/newRepo2.png).   
-Je krijgt nu een ![invulveld](images/newRepo3.png). We geven het dezelfde naam als ons lokaal project ‘EersteProject’. Je geeft een korte uitleg over jouw project bij de beschrijving. Vermits wij in ons project een Readme.md hebben gemaakt, gaan we dit hier niet meer aanvinken.   
+Maar op dit moment bestaat ons project nog maar enkel lokaal. We maken nu op GitHub ook een repo aan met dezelfde naam. Hiervoor moet je je inloggen op GitHub.com en je kiest dat je een nieuwe repository wil aanmaken. Dit kan met ![het plusje naast je account afbeelding](images/newRepo1.PNG) Of met de knop ‘”New repository” in ![het kader met het overzicht van jouw projecten](images/newRepo2.PNG).   
+Je krijgt nu een ![invulveld](images/newRepo3.PNG). We geven het dezelfde naam als ons lokaal project ‘EersteProject’. Je geeft een korte uitleg over jouw project bij de beschrijving. Vermits wij in ons project een Readme.md hebben gemaakt, gaan we dit hier niet meer aanvinken.   
 In je eerste project, gaan we ook geen .gitignore laten genereren. Weet dat je in een project met code altijd opneemt. In punt 4 gaan we dieper in op dit soort bestand en waarom het goed is om altijd een .gitignore bestand in je project te zetten. Je kan dit dan later nog toevoegen.  
 Nu klik je op de knop ‘Create repository’ en je remote repo is aangemaakt.  
-Nu moet je nog een verbinding maken met je lokaal project. In GitHub opent zich nu een [venster](images/newRepo4.png) dat je helpt met hoe je dat nu best doet. Vermits je lokaal je project al volledig klaar hebt staan, ga je dit nu nog moeten pushen naar GitHub. We kiezen hiervoor de optie om dit vanaf de prompt te doen.  
+Nu moet je nog een verbinding maken met je lokaal project. In GitHub opent zich nu een [venster](images/newRepo4.PNG) dat je helpt met hoe je dat nu best doet. Vermits je lokaal je project al volledig klaar hebt staan, ga je dit nu nog moeten pushen naar GitHub. We kiezen hiervoor de optie om dit vanaf de prompt te doen.  
 ```
 C:\Users\UsersName\Documents\EersteProject [master]>git remote add origin https://github.com/gebruikersnaam/projectnaam.git 
 C:\Users\UsersName\Documents\EersteProject [master]>git push -u origin master
 ```
-Nu heb je een link gelegd met GitHub en heb je je project geüploaded naar GitHub. En dan krijg je een ![boodschap](images/pushMaster.png) wat hij doet en als laatste moet dan staan: ‘Branch master set up to track remote branch master from origin'.  
+Nu heb je een link gelegd met GitHub en heb je je project geüploaded naar GitHub. En dan krijg je een ![boodschap](images/pushMaster.PNG) wat hij doet en als laatste moet dan staan: ‘Branch master set up to track remote branch master from origin'.  
 
-Maak nu in de ![verkenner](images/testbestand.png) in de projectmap een tekstbestand testBestand.txt .  
+Maak nu in de ![verkenner](images/testbestand.PNG) in de projectmap een tekstbestand testBestand.txt .  
 Aan de prompt typ je ls. Je ziet dat in het project nu 2 bestanden zitten, maar dit zegt niet veel. Als je nu naar de prompt gaat kijken, zie je dat er weer rode cijfers achter master staan. Typ nu git status en je krijgt de boodschap dat je branche up-to-date is met ‘origin/master’, maar dat er wel nog een bestand in zit, dat niet tot het Git project behoort. En je krijgt dan de boodschap hoe je dat bestand kan opnemen in de staging area, zodat bij een volgende commit het automatisch in je masterbranche zit.
-![ls git status voorbeeld](images/lsStatus.png)  
+![ls git status voorbeeld](images/lsStatus.PNG)  
 Je doet dus terug ```C:\Users\UsersName\Documents\EersteProject [master= rode cijfers]>git add testbestand.txt``` en de rode cijfers achter master, zijn groen.  
 Nu doen we weer een commit en lokaal zit alles in de master branche. Maar nu zie je achter master een pijl staan, die aangeeft dat je verandering nog gepusht moet worden.  
 Dus doe je nu weer: ```C:\Users\UsersName\Documents\EersteProject [master= groene cijfers]> git push -u origin master ```. En als aan de prompt nu weer [master =] verschijnt, dan heb je lokaal en remote dezelfde versie van je project staan.  
@@ -144,13 +144,13 @@ Dit doe je met git pull origin master. Als er niets gewijzigd is, krijg je : Alr
 ```
 C:\Users\UsersName\Documents\EersteProject [master=]>git pull origin master
 ```
-Maar nu ga je een ![verandering](images/verandering1.png) aanbrengen remote: Zet in het bestand ‘testBestand.txt’ wat tekst.  
+Maar nu ga je een ![verandering](images/verandering1.PNG) aanbrengen remote: Zet in het bestand ‘testBestand.txt’ wat tekst.  
 Een bestand editen doe je door op de naam van het bestand te klikken en dan op het potlood in het lint.  
-In dit ![venster](images/verandering2.png) zet je tekst in het bestand. Je vult een commit boodschap in en klikt op de knop 'Commit changes'.  
+In dit ![venster](images/verandering2.PNG) zet je tekst in het bestand. Je vult een commit boodschap in en klikt op de knop 'Commit changes'.  
 Maar nu staat die aanpassing wel online, maar die zit niet in onze lokale repo.  
 Laat je echter niet vangen: als je nu lokaal git status doet, ga je nog krijgen dat alles ok is. Want dit git status gaat kijken of jij lokaal nog iets hebt toegevoegd, dat nog niet gecommit is. Nu gebruik je  
  ```C:\Users\UsersName\Documents\EersteProject [master=]>git pull origin master```  
-en nu krijg je weer een hele lijst van acties. Als je gaat ![kijken](images/afterPull.png) dan zegt de tekst dat 1 bestand gewijzigd is.  
+en nu krijg je weer een hele lijst van acties. Als je gaat ![kijken](images/afterPull.PNG) dan zegt de tekst dat 1 bestand gewijzigd is.  
 >**Dus**: voordat je lokaal begint te werken altijd een pull doen ook al staat [master =].  
 Zo vermijd je al een eerste reeks problemen, wanneer je jouw aanpassingen wil pushen naar remote.  
 
@@ -160,16 +160,16 @@ alle reeds gebruikte commando's
 ### Gebruik:
 Zoals hierboven aangegeven, kunnen er ook problemen opduiken als je jouw aanpassingen wil pushen.   
 Hiervoor ga je nu zelf een probleem uitlokken.  
-In GitHub voeg je in het ![tekstdocument](images/merge1.png) testbestand.txt een tweede regel tekst toe en commit dit.  
-Lokaal ga je in ![testbestand.txt](images/merge2.png) ook een tweede regel tekst toevoegen.  
-Nu open je de Git Shell. In je project doe je git status. Nu zie je dat je lokaal iets hebt veranderd en dat je dat nog moet toevoegen aan je project. ![Doe nu weer git add testBestand.txt en een commit. Nu ga je dit naar je remote repo pushen.](images/merge3.png).  
-Oei, dit lukt precies niet: remote staat er een andere versie van je project dan die, die je lokaal gewijzigd hebt. Voorstel is om eerst een git pull uit te voeren, zodat je lokaal project up-to-date is. ![Dit](images/merge4.png) ga je nu proberen.  
+In GitHub voeg je in het ![tekstdocument](images/merge1.PNG) testbestand.txt een tweede regel tekst toe en commit dit.  
+Lokaal ga je in ![testbestand.txt](images/merge2.PNG) ook een tweede regel tekst toevoegen.  
+Nu open je de Git Shell. In je project doe je git status. Nu zie je dat je lokaal iets hebt veranderd en dat je dat nog moet toevoegen aan je project. ![Doe nu weer git add testBestand.txt en een commit. Nu ga je dit naar je remote repo pushen.](images/merge3.PNG).  
+Oei, dit lukt precies niet: remote staat er een andere versie van je project dan die, die je lokaal gewijzigd hebt. Voorstel is om eerst een git pull uit te voeren, zodat je lokaal project up-to-date is. ![Dit](images/merge4.PNG) ga je nu proberen.  
 Maar ook dit gaat niet zomaar: je ziet dat er nu 2 reeksen getallen verschijnen en dat er een tweerichtingspijl na master staat. Dit wil zeggen dat je dit eerst moet oplossen, voordat je verder kunt. Je opent nu het bestand waar zich een ‘Merge conflict’ voordoet.  
-Dit doe je via de prompt: notepad .\testbestand.txt. Nu opent zich het ![bestand](images/merge5.png) en je ziet dat beide aanpassingen in je document zijn opgenomen, maar dat er nog dingen zijn bijgekomen.  
+Dit doe je via de prompt: notepad .\testbestand.txt. Nu opent zich het ![bestand](images/merge5.PNG) en je ziet dat beide aanpassingen in je document zijn opgenomen, maar dat er nog dingen zijn bijgekomen.  
 Als eerste staan er kleiner dan tekens gevolgd door HEAD. HEAD is een pointer met metadata van de laatste commit. Die geeft aan wat in de versie die je wil mergen staat. Daaronder zie je gelijkheidstekens en daaronder dan de regel die anders is in de versie die jij wil mergen, met daaronder groter dan tekens en dan de id van de commit die het probleem geeft. Die vind je ook op GitHub terug.  
-Jij moet nu bepalen wat juist is. Met andere woorden, je gaat het ![bestand](images/merge6.png) manueel aanpassen en opslaan.  
-Ga dit terug toevoegen en committen. Nu push dit terug naar remote. Je ![ziet](images/merge7.png): nu lukt het wel.  
-En in je browser refresh je GitHub, je gaat kijken naar de commits en zie je ![de verschillende commits](images/merge8.png)  
+Jij moet nu bepalen wat juist is. Met andere woorden, je gaat het ![bestand](images/merge6.PNG) manueel aanpassen en opslaan.  
+Ga dit terug toevoegen en committen. Nu push dit terug naar remote. Je ![ziet](images/merge7.PNG): nu lukt het wel.  
+En in je browser refresh je GitHub, je gaat kijken naar de commits en zie je ![de verschillende commits](images/merge8.PNG)  
 Dus beide commits zijn opgenomen in de geschiedenis van je versiebeheer, evenals de commit die nodig was om het probleem op te lossen.  
 Je ziet: het was nu maar 1 regel en toch vroeg het al je aandacht om dit juist op te lossen. Stel je eens voor dat je een groot aantal code geschreven hebt en dit probleem doet zich dan voor!
 >**Dus**: Altijd zo snel mogelijk commits (van logische blokken) doen en pushen naar GitHub, evenals voor start nieuwe code steeds een pull, zelfs als je zelf net gepusht hebt. Alleen zo blijf je sommige problemen steeds een stapje voor. 
