@@ -74,7 +74,7 @@ Nu: een bestand in de map zetten: ‘readme.md’. Dit kan je in kladblok maken 
 C:\Users\UsersName\Documents\EersteProject [master]>notepad readme.md
 ```
 Nu opent kladblok en krijg je een pop-up: dit bestand bestaat niet, moet ik dit aanmaken? Je klikt ja.  
-![schermafbeelding](images/screen1.png)
+![schermafbeelding](/images/screen1.png)
 Je zet  *Hier komt het doel van ons project* in het bestand (met de asterisken ervoor en erachter) en slaat dit op en sluit het bestand.  Opmerking: als je die pop-up niet gekregen hebt: doe dan alsnog ‘opslaan als’ en sla het op als readme.md , alle bestanden(geen tekstbestand!!!)  
 Je typt nu ‘git status’: Je krijgt nu de melding dat er nog ‘Untracked files’ zijn en dat je die best toevoegt aan datgene je wil committen.  
 ```
